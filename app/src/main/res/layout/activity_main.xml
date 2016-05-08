@@ -1,0 +1,50 @@
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_pane_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:background="#66b3ff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0000ff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Continents"
+            android:textColor="#ffffff" />
+
+        <ListView
+            android:id="@+id/left_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00d0f0"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Countries"
+            android:textColor="#ffffff" />
+
+        <ListView
+            android:id="@+id/main_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0099C2" />
+
+    </LinearLayout>
+</android.support.v4.widget.SlidingPaneLayout>
